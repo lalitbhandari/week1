@@ -19,7 +19,7 @@ public class RegistrationForm extends JFrame
         setSize(500,550);
         setLayout(new GridLayout(0,2,10,10));
         
-        // Student name  input
+        //Student name  input
         //add(new JLabel("Student Name:"));
         //JTextField nameFiled = new JTextField();
        // add(nameFiled);
