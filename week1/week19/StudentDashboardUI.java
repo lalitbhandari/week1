@@ -13,21 +13,20 @@ public class StudentDashboardUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // ================= HEADER (NORTH) =================
+        // HEADER (NORTH) 
         JPanel headerPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         headerPanel.setBackground(Color.LIGHT_GRAY);
 
-        ImageIcon icon = new ImageIcon("logo.png");
-        JLabel logoLabel = new JLabel(icon);
+        
+        //JLabel titleLabel = new JLabel(new FlowLayout(FlowLayout.CENTER));
+        JLabel titleLabel = new JLabel("<html><h1>Student Admin Panel</h1></html>",JLabel.CENTER);
 
-        JLabel titleLabel = new JLabel("<html><h1>Student Admin Panel</h1></html>");
-
-        headerPanel.add(logoLabel);
+        
         headerPanel.add(titleLabel);
 
         add(headerPanel, BorderLayout.NORTH);
 
-        // ================= FOOTER (SOUTH) =================
+        //  FOOTER (SOUTH) 
         JPanel footerPanel = new JPanel(new FlowLayout(FlowLayout.CENTER));
         footerPanel.setBackground(Color.LIGHT_GRAY);
 
@@ -36,7 +35,7 @@ public class StudentDashboardUI extends JFrame {
 
         add(footerPanel, BorderLayout.SOUTH);
 
-        // ================= SIDEBAR (WEST) =================
+        // SIDEBAR (WEST)
         JPanel sidePanel = new JPanel(new FlowLayout(FlowLayout.LEFT,10,20));
         sidePanel.setPreferredSize(new Dimension(180,0));
         sidePanel.setBackground(new Color(220,220,220));
@@ -60,7 +59,7 @@ public class StudentDashboardUI extends JFrame {
 
         add(sidePanel, BorderLayout.WEST);
 
-        // ================= FORM PANEL (CENTER) =================
+        //FORM PANEL (CENTER)
         JPanel formPanel = new JPanel();
         formPanel.setLayout(new BoxLayout(formPanel, BoxLayout.Y_AXIS));
 
